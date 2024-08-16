@@ -14,7 +14,6 @@ void display(vector<int> &v)
 
 int main(){
     vector<int> vec1;
-    vector<int> :: iterator iter= vec1.begin();
     int element,size;
     cout<<"Enter the size of the array"<<endl;
     cin>>size;
@@ -24,7 +23,9 @@ int main(){
         vec1.push_back(element);
     }
     display(vec1);
-    vec1.insert(iter+1,566)
+    //initialisation should be here only because it will not work if you place it above
+    vector<int> :: iterator iter= vec1.begin();
+    vec1.insert(iter+1,566);
     display(vec1);
     return 0;
 
