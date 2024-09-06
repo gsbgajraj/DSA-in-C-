@@ -25,7 +25,8 @@ int main(){
     display(vec1);
     //initialisation should be here only because it will not work if you place it above
     vector<int> :: iterator iter= vec1.begin();
-    vec1.insert(iter+1,566);
+    // vec1.insert(iter+1,566);
+    vec1.insert(iter+1,5,566);    //it will insert the element "566" exactly five times
     display(vec1);
     return 0;
 
